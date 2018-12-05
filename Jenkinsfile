@@ -12,6 +12,6 @@ node('linux') {
 		sh ' ant -f build.xml'
 	}   
 	stage ('Report'){    
-		sh 'aws cloudformation describe-stack-resources --stack-name jenkins --region us-east-1' 
+		sh 'aws cloudformation describe-stack-resources --stack-name Jenkins --region us-east-1' 
 	}
 }
